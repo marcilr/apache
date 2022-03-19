@@ -144,7 +144,23 @@ Copyright (C) 2022 by Raymond E. Marcil &lt;marcilr@gmail.com&gt;<br>
         Configured apache with:<br>
         $ cd /usr/local/src/httpd-2.4.53<br>
         $ ./configure --prefix=/usr/local/apache2 --enable-ssl<br>
-        
+        checking for chosen layout... Apache<br>
+        checking for working mkdir -p... yes<br>
+        checking for grep that handles long lines and -e... /usr/bin/grep<br>
+        checking for egrep... /usr/bin/grep -E<br>
+        checking build system type... x86_64-pc-linux-gnu<br>
+        checking host system type... x86_64-pc-linux-gnu<br>
+        checking target system type... x86_64-pc-linux-gnu<br>
+        configure:<br>
+        configure: Configuring Apache Portable Runtime library...<br>
+        configure:<br>
+        checking for APR... no<br>
+        configure: error: APR not found.  Please read the documentation.<br>
+        $<br>
+
+        <p>
+        Looks like APR needs to be installed for apache configuration.<br>
+          
       <li style="margin-top:0.5cm;">
         Compile apache source code following 
         httpd-2.4.53/INSTALL/ instructions.<br>
