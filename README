@@ -5,5 +5,11 @@ by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+00INSTALL/
+  Compile and Install Apache
+
+conf/
+  Configure Apache
+
 index.html
   Apache web server
