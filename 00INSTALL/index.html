@@ -116,10 +116,11 @@ Copyright (C) 2022 by Raymond E. Marcil &lt;marcilr@gmail.com&gt;<br>
         Expanded apache source looks good.<br>
           
       <li style="margin-top:0.5cm;">
-        Compile apache source code following 
+        Configure apache source code following 
         httpd-2.4.53/INSTALL/ instructions.<br>
         $ cd /usr/local/src/httpd-2.4.53<br>
         $ less INSTALL<br>
+
         <p>
         APACHE INSTALLATION OVERVIEW<br>
         ...<br>
@@ -128,7 +129,22 @@ Copyright (C) 2022 by Raymond E. Marcil &lt;marcilr@gmail.com&gt;<br>
         $ make install<br>
         $ PREFIX/bin/apachectl start<br>
 
+        <p>
+        Check apache configuration options:<br>
+        $ cd /usr/local/src/httpd-2.4.53<br>
+        $ ./configure --help<br>        
+        ...<br>
+        --prefix=PREFIX         install architecture-independent files in PREFIX<br>
+        --enable-ssl            SSL/TLS support (mod_ssl)<br>
+        --enable-static-rotatelogs<br>
+        &nbsp;&nbsp;&nbsp;Build a statically linked version of rotatelogs<br>
+        ...<br>
 
+      <li style="margin-top:0.5cm;">
+        Compile apache source code following 
+        httpd-2.4.53/INSTALL/ instructions.<br>
+        $ cd /usr/local/src/httpd-2.4.53<br>
+        
     </ol>
 </ol>
 
