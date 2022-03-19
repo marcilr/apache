@@ -77,6 +77,50 @@ Copyright (C) 2022 by Raymond E. Marcil &lt;marcilr@gmail.com&gt;<br>
         Open Apache download site in web browser:<br>
         <a href="https://httpd.apache.org/download.cgi">
           https://httpd.apache.org/download.cgi</a>
+      </li>
+      <li>
+        Get path for latest stable Apache web server source:<br>
+        <a href="https://dlcdn.apache.org/httpd/httpd-2.4.53.tar.bz2">
+          https://dlcdn.apache.org/httpd/httpd-2.4.53.tar.bz2</a>
+      <li>
+        Create local directory to download apache source to:<br>
+        $ mkdir -p /usr/local/src/00TARBALLS/net/apache<br>
+      <li>
+        Change local directory and download the lastest apache
+        source code:<br>
+        cd /usr/local/src/00TARBALLS/net/apache<br>
+        wget https://dlcdn.apache.org/httpd/httpd-2.4.53.tar.bz2<br>
+    </ol>
+    
+    <li>
+        Change to src/ directory and expand the apache tarball.<br>
+        $ cd /usr/local/src
+        $ tar jxvpf 00TARBALLS/net/apache/httpd-2.4.53.tar.bz2
+        ar.bz2<br>
+        httpd-2.4.53/<br>
+        httpd-2.4.53/acinclude.m4<br>
+        httpd-2.4.53/README.cmake<br>
+        httpd-2.4.53/INSTALL<br>
+        ...<br>
+        httpd-2.4.53/test/pyhttpd/htdocs/test1/007/007.py<br>
+
+        <p>
+        $ du -h httpd-2.4.53/<br>
+        ...<br>
+        49M	httpd-2.4.53/<br>
+        $ cd httpd-2.4.53<br>
+        $ find . | wc -l
+        3253
+
+        <p>
+        Expanded apache source looks good.<br>
+          
+      <li>
+        Following the instructions under httpd-2.4.53/INSTALL  
+        build the Apache source code.<br>
+             
+        
+
     </ol>
 </ol>
 
